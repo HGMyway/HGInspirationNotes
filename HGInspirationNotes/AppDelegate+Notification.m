@@ -109,7 +109,7 @@
  @param error 信鸽推送启动错误的信息
  */
 - (void)xgPushDidFinishStart:(BOOL)isSuccess error:(nullable NSError *)error{
-	NSLog(@"信鸽推送是否启动成功");
+//	NSLog(@"信鸽推送是否启动成功");
 }
 
 /**
@@ -119,7 +119,7 @@
  @param error 信鸽推动终止错误的信息
  */
 - (void)xgPushDidFinishStop:(BOOL)isSuccess error:(nullable NSError *)error{
-	NSLog(@"信鸽推送是否终止");
+//	NSLog(@"信鸽推送是否终止");
 }
 
 
@@ -130,7 +130,7 @@
  @param error 上报失败的信息
  */
 - (void)xgPushDidReportNotification:(BOOL)isSuccess error:(nullable NSError *)error{
-	NSLog(@"上报是否成功");
+//	NSLog(@"上报是否成功");
 }
 
 

@@ -128,6 +128,7 @@
                         <segue destination="mxf-PR-AXS" kind="show" identifier="rootToFMDB" id="nl6-0T-6cy"/>
                         <segue destination="Msk-j6-x9H" kind="show" identifier="rootToLocalNotification" id="aJM-1w-7Hh"/>
                         <segue destination="UmL-wz-KQC" kind="show" identifier="rootToPushNotification" id="GkP-UD-hUh"/>
+                        <segue destination="4is-jF-kfa" kind="show" identifier="rootToMKMapView" id="8wm-BX-mt6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNe-AP-yZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -561,6 +562,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXb-MB-cYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7617" y="2355"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="G2x-GA-BOT">
+            <objects>
+                <viewController id="4is-jF-kfa" customClass="HGMKMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2BD-fz-gTL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kEh-HI-ocY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="glm-mj-PcY" firstAttribute="bottom" secondItem="kEh-HI-ocY" secondAttribute="bottom" id="Ec3-0F-XSZ"/>
+                            <constraint firstItem="kEh-HI-ocY" firstAttribute="leading" secondItem="glm-mj-PcY" secondAttribute="leading" id="LYB-8b-tci"/>
+                            <constraint firstItem="kEh-HI-ocY" firstAttribute="top" secondItem="glm-mj-PcY" secondAttribute="top" id="PI6-OP-sX6"/>
+                            <constraint firstItem="glm-mj-PcY" firstAttribute="trailing" secondItem="kEh-HI-ocY" secondAttribute="trailing" id="iej-fA-zee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="glm-mj-PcY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MKMapView" destination="kEh-HI-ocY" id="9vb-RR-MYK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOC-88-gm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8348" y="2354.5727136431788"/>
         </scene>
         <!--Item-->
         <scene sceneID="geY-k0-HOf">

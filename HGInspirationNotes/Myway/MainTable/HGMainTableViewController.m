@@ -24,7 +24,7 @@
 
 		// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 		// self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
+//	[UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 	[self addCellTitle:@"URLConnection" segueName:@"rootToConnection"];
 	[self addCellTitle:@"URLSession" segueName:@"rootToSession"];
 	[self addCellTitle:@"OperationQueue" segueName:@"rootToOperationQueue"];
@@ -42,6 +42,7 @@
 	
 	[self addCellTitle:@"LocalNotification" segueName:@"rootToLocalNotification"];
 	[self addCellTitle:@"PushNotification" segueName:@"rootToPushNotification"];
+	[self addCellTitle:@"MKMapView" segueName:@"rootToMKMapView"];
 	
 
 

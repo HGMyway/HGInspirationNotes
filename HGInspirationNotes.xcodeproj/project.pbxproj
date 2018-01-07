@@ -15,6 +15,8 @@
 		D61449E41FFB26E000C56C0E /* AppDelegate+SetRenders.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E31FFB26E000C56C0E /* AppDelegate+SetRenders.m */; };
 		D61449E71FFB752C00C56C0E /* UIView+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E61FFB752C00C56C0E /* UIView+HookForMainThreadUI.m */; };
 		D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */; };
+		D667634F2001C926003D56C2 /* HGMKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667634E2001C926003D56C2 /* HGMKMapViewController.m */; };
+		D66763532002480B003D56C2 /* HGBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66763522002480B003D56C2 /* HGBaiduMapViewController.m */; };
 		D673A64B1FF09EF500B1E787 /* HGFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A64A1FF09EF500B1E787 /* HGFMDBViewController.m */; };
 		D673A64F1FF0A62D00B1E787 /* HGSqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A64E1FF0A62D00B1E787 /* HGSqlManager.m */; };
 		D673A6521FF0A86D00B1E787 /* HGSqlManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A6511FF0A86D00B1E787 /* HGSqlManagerBase.m */; };
@@ -97,6 +99,10 @@
 		D61449E61FFB752C00C56C0E /* UIView+HookForMainThreadUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HookForMainThreadUI.m"; sourceTree = "<group>"; };
 		D61449E81FFBABD800C56C0E /* CALayer+HookForMainThreadUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+HookForMainThreadUI.h"; sourceTree = "<group>"; };
 		D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HookForMainThreadUI.m"; sourceTree = "<group>"; };
+		D667634D2001C926003D56C2 /* HGMKMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMKMapViewController.h; sourceTree = "<group>"; };
+		D667634E2001C926003D56C2 /* HGMKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMKMapViewController.m; sourceTree = "<group>"; };
+		D66763512002480B003D56C2 /* HGBaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBaiduMapViewController.h; sourceTree = "<group>"; };
+		D66763522002480B003D56C2 /* HGBaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGBaiduMapViewController.m; sourceTree = "<group>"; };
 		D673A6491FF09EF500B1E787 /* HGFMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGFMDBViewController.h; sourceTree = "<group>"; };
 		D673A64A1FF09EF500B1E787 /* HGFMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGFMDBViewController.m; sourceTree = "<group>"; };
 		D673A64D1FF0A62D00B1E787 /* HGSqlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSqlManager.h; sourceTree = "<group>"; };
@@ -269,6 +275,33 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		D667634A2001C8F4003D56C2 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D6676350200247F7003D56C2 /* BaiduMap */,
+				D667634C2001C907003D56C2 /* MKMapView */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		D667634C2001C907003D56C2 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				D667634D2001C926003D56C2 /* HGMKMapViewController.h */,
+				D667634E2001C926003D56C2 /* HGMKMapViewController.m */,
+			);
+			path = MKMapView;
+			sourceTree = "<group>";
+		};
+		D6676350200247F7003D56C2 /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				D66763512002480B003D56C2 /* HGBaiduMapViewController.h */,
+				D66763522002480B003D56C2 /* HGBaiduMapViewController.m */,
+			);
+			path = BaiduMap;
+			sourceTree = "<group>";
+		};
 		D673A64C1FF0A5B800B1E787 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +391,7 @@
 		D6779D061FE607830092A2BF /* Myway */ = {
 			isa = PBXGroup;
 			children = (
+				D667634A2001C8F4003D56C2 /* MapKit */,
 				D69E3E241FFDFA3D001ADDB3 /* Notification */,
 				D60C1A331FEFBEBF00FD90D7 /* FMDB */,
 				D6ECB4E81FEC89DA005F328E /* UIBezierPath */,
@@ -759,9 +793,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HGInspirationNotes/Pods-HGInspirationNotes-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -935,6 +972,7 @@
 				D61449E71FFB752C00C56C0E /* UIView+HookForMainThreadUI.m in Sources */,
 				D6779D151FE609440092A2BF /* HGGCDViewController.m in Sources */,
 				D6779D3B1FE60FB40092A2BF /* HGMethodInvalidViewController.m in Sources */,
+				D667634F2001C926003D56C2 /* HGMKMapViewController.m in Sources */,
 				D6779D931FE931A50092A2BF /* HGThread.m in Sources */,
 				D67AA61D1FF4D2BF0085F52C /* HGDBBaseModel+Sql.m in Sources */,
 				D6779D321FE60B680092A2BF /* NetworkAsst.m in Sources */,
@@ -942,6 +980,7 @@
 				D6779D8F1FE912F80092A2BF /* HGRunLoopThreadKeepViewController.m in Sources */,
 				D6779D0A1FE607BC0092A2BF /* HGMainTableViewController.m in Sources */,
 				D67AA6131FF2313B0085F52C /* HGUserInfoDBModel.m in Sources */,
+				D66763532002480B003D56C2 /* HGBaiduMapViewController.m in Sources */,
 				D673A6521FF0A86D00B1E787 /* HGSqlManagerBase.m in Sources */,
 				D6779D411FE612FC0092A2BF /* AppDelegate+SwitchRoot.m in Sources */,
 				D6779CD21FE606B80092A2BF /* AppDelegate.m in Sources */,
