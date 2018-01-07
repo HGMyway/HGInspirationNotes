@@ -6,8 +6,8 @@
 //  Copyright © 2017年 小雨很美. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HGBaseViewController.h"
 
-@interface HGRunLoopThreadKeepViewController : UIViewController
+@interface HGRunLoopThreadKeepViewController : HGBaseViewController
 
 @end

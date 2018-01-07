@@ -40,6 +40,9 @@
 
 	[self addCellTitle:@"FMDB" segueName:@"rootToFMDB"];
 	
+	[self addCellTitle:@"LocalNotification" segueName:@"rootToLocalNotification"];
+	[self addCellTitle:@"PushNotification" segueName:@"rootToPushNotification"];
+	
 
 
 

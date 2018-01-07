@@ -14,15 +14,10 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - FBRetainCycleDetector (0.1.4)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
-  - GYMonitor (1.0.0):
-    - PLCrashReporter
-  - MLeaksFinder (1.0.0):
-    - FBRetainCycleDetector
-  - PLCrashReporter (1.2.0)
+  - QQ_XGPush (3.0.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -35,21 +30,17 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - FMDB (~> 2.7.2)
-  - GYMonitor (~> 1.0.0)
-  - MLeaksFinder (~> 1.0.0)
+  - QQ_XGPush (~> 3.0.1)
   - ReactiveCocoa (~> 2.5.0)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
-  GYMonitor: 047dbffe7aa878b275d1a4f32af45b5896e5b937
-  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
-  PLCrashReporter: 16927d86a093d0b9cf110545dacb77cb0ed0f243
+  QQ_XGPush: 2824cca429269a397cff8cf1028216412527c59e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4e100537be691bde0102bd4101080292ded42128
+PODFILE CHECKSUM: c4ea12d513bdac8e15a0dd8054dbe8d00207af24
 
 COCOAPODS: 1.3.1

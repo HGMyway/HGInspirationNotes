@@ -33,6 +33,7 @@
 }
 
 - (BOOL)save{
+
 	BOOL res = [[HGSqlManager sharedManager] open];
 	if (res == NO) {
 		NSLog(@"%s 数据库打开失败",__func__);
@@ -43,11 +44,9 @@
 //		NSLog(@"删除数据失败");
 //	}
 	res = [[[HGSqlManager sharedManager] fmdb_instance]executeUpdate:@"INSERT INTO HGTest_User(uid , uname , age) VALUES (? , ? , ?) ",self.uid,self.uname,self.age];
-
 	if (res == NO) {
 		NSLog(@"添加数据失败");
 	}
-
 	[[HGSqlManager sharedManager] close];
 	return res;
 }

@@ -112,6 +112,7 @@
 }
 */
 - (BOOL)insertIntoTablePerson:(HGUserInfoDBModel *)model{
+
 	return  [model saveQueue];
 }
 - (void)asynSave:(NSArray <HGUserInfoDBModel *>*)modelArray{

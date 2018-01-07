@@ -126,6 +126,8 @@
                         <segue destination="1lB-eV-nDR" kind="show" identifier="rootToRunLoopThreadKeep" id="MUY-Zv-2Vy"/>
                         <segue destination="aMJ-CW-GQ4" kind="show" identifier="rootToBezierPath" id="YG0-xj-3vq"/>
                         <segue destination="mxf-PR-AXS" kind="show" identifier="rootToFMDB" id="nl6-0T-6cy"/>
+                        <segue destination="Msk-j6-x9H" kind="show" identifier="rootToLocalNotification" id="aJM-1w-7Hh"/>
+                        <segue destination="UmL-wz-KQC" kind="show" identifier="rootToPushNotification" id="GkP-UD-hUh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNe-AP-yZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,6 +518,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkC-HV-9UQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6058" y="2358"/>
+        </scene>
+        <!--Local Notification View Controller-->
+        <scene sceneID="eVU-Ha-zx7">
+            <objects>
+                <viewController id="Msk-j6-x9H" customClass="HGLocalNotificationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAc-6f-h7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juX-q9-WCz">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushLocalNotification:" destination="Msk-j6-x9H" eventType="touchUpInside" id="I7p-Ub-xP5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="juX-q9-WCz" firstAttribute="centerY" secondItem="BAc-6f-h7w" secondAttribute="centerY" id="0Yp-hq-vCh"/>
+                            <constraint firstItem="juX-q9-WCz" firstAttribute="centerX" secondItem="BAc-6f-h7w" secondAttribute="centerX" id="zXv-Vf-Ctb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2V0-TJ-IEm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCs-HU-nco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6794" y="2355"/>
+        </scene>
+        <!--Push Notification View Controller-->
+        <scene sceneID="GXj-4k-92a">
+            <objects>
+                <viewController id="UmL-wz-KQC" customClass="HGPushNotificationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7E-WG-EKa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gTz-Qm-795"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXb-MB-cYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7617" y="2355"/>
         </scene>
         <!--Item-->
         <scene sceneID="geY-k0-HOf">

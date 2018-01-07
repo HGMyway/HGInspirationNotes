@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25F4768DF39B149EA917F1B9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EBAEE61F5A16AB5E7873 /* CFNetwork.framework */; };
+		55AFC479451CA3E1AE6B2B51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB16120DA534A314A011153 /* Security.framework */; };
 		67DF6ED86968313F9FE0D210 /* libPods-HGInspirationNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E552E9A7FA5463BDA0BBD1 /* libPods-HGInspirationNotes.a */; };
+		862E031D5583A545AAF3F104 /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B1E3F6F8257C4CBBCE3792 /* libXG-SDK.a */; };
+		AAEE25DF4E62750F7217600C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306FEA98F9596384AAAA5E70 /* SystemConfiguration.framework */; };
 		D61449E41FFB26E000C56C0E /* AppDelegate+SetRenders.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E31FFB26E000C56C0E /* AppDelegate+SetRenders.m */; };
 		D61449E71FFB752C00C56C0E /* UIView+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E61FFB752C00C56C0E /* UIView+HookForMainThreadUI.m */; };
 		D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */; };
@@ -44,10 +48,15 @@
 		D67AA6101FF2310B0085F52C /* HGDBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D67AA60F1FF2310B0085F52C /* HGDBBaseModel.m */; };
 		D67AA6131FF2313B0085F52C /* HGUserInfoDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D67AA6121FF2313B0085F52C /* HGUserInfoDBModel.m */; };
 		D67AA61D1FF4D2BF0085F52C /* HGDBBaseModel+Sql.m in Sources */ = {isa = PBXBuildFile; fileRef = D67AA61C1FF4D2BF0085F52C /* HGDBBaseModel+Sql.m */; };
+		D69E3E281FFDFA80001ADDB3 /* HGLocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69E3E271FFDFA80001ADDB3 /* HGLocalNotificationViewController.m */; };
+		D69E3E2B1FFDFDC7001ADDB3 /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = D69E3E2A1FFDFDC7001ADDB3 /* AppDelegate+Notification.m */; };
+		D69E3E2F1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69E3E2E1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m */; };
 		D6ECB4EB1FEC8A36005F328E /* HGBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */; };
 		D6ECB4EF1FEC8A5F005F328E /* HGSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ECB4EE1FEC8A5F005F328E /* HGSignView.m */; };
 		E3395300E2C9D2ACAAE7D057 /* libPods-HGInspirationNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BA988A868DFA73952BCE8E /* libPods-HGInspirationNotesTests.a */; };
+		E753F0586F238159593B088C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A0CDB336DF2311D751DF31 /* libz.tbd */; };
 		F2BE09841D67597E938052C9 /* libPods-HGInspirationNotesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78131226AA33FEDF73F3D244 /* libPods-HGInspirationNotesUITests.a */; };
+		FB82C9E0C59D96C9E9B5BA15 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F747EEAD986CAED9274B522D /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,11 +80,16 @@
 		1440489B0417244DF5755D93 /* Pods-HGInspirationNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGInspirationNotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGInspirationNotesTests/Pods-HGInspirationNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B9230AD2822204C7D945B9D /* Pods-HGInspirationNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGInspirationNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGInspirationNotes/Pods-HGInspirationNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		253C9DAEE8968E2B9989C8B0 /* Pods-HGInspirationNotesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGInspirationNotesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGInspirationNotesUITests/Pods-HGInspirationNotesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3005C76C24A2970A2F22ACB1 /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
+		306FEA98F9596384AAAA5E70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<group>"; };
 		35BA988A868DFA73952BCE8E /* libPods-HGInspirationNotesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HGInspirationNotesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A0CDB336DF2311D751DF31 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libz.tbd; sourceTree = "<group>"; };
 		4D45555BAF142CC6C05A5004 /* Pods-HGInspirationNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGInspirationNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGInspirationNotesTests/Pods-HGInspirationNotesTests.release.xcconfig"; sourceTree = "<group>"; };
 		78131226AA33FEDF73F3D244 /* libPods-HGInspirationNotesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HGInspirationNotesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B1E3F6F8257C4CBBCE3792 /* libXG-SDK.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; path = "libXG-SDK.a"; sourceTree = "<group>"; };
 		88E552E9A7FA5463BDA0BBD1 /* libPods-HGInspirationNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HGInspirationNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21B9A60F020510DD013C378 /* Pods-HGInspirationNotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGInspirationNotesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGInspirationNotesUITests/Pods-HGInspirationNotesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6D5EBAEE61F5A16AB5E7873 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = "<group>"; };
 		BD6EDB6A0082707828ACDEA4 /* Pods-HGInspirationNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGInspirationNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGInspirationNotes/Pods-HGInspirationNotes.release.xcconfig"; sourceTree = "<group>"; };
 		D61449E21FFB26E000C56C0E /* AppDelegate+SetRenders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SetRenders.h"; sourceTree = "<group>"; };
 		D61449E31FFB26E000C56C0E /* AppDelegate+SetRenders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SetRenders.m"; sourceTree = "<group>"; };
@@ -150,10 +164,19 @@
 		D67AA61A1FF4CDE40085F52C /* HGSqlModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSqlModelProtocol.h; sourceTree = "<group>"; };
 		D67AA61B1FF4D2BF0085F52C /* HGDBBaseModel+Sql.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HGDBBaseModel+Sql.h"; sourceTree = "<group>"; };
 		D67AA61C1FF4D2BF0085F52C /* HGDBBaseModel+Sql.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HGDBBaseModel+Sql.m"; sourceTree = "<group>"; };
+		D69E3E261FFDFA80001ADDB3 /* HGLocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGLocalNotificationViewController.h; sourceTree = "<group>"; };
+		D69E3E271FFDFA80001ADDB3 /* HGLocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGLocalNotificationViewController.m; sourceTree = "<group>"; };
+		D69E3E291FFDFDC7001ADDB3 /* AppDelegate+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
+		D69E3E2A1FFDFDC7001ADDB3 /* AppDelegate+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
+		D69E3E2D1FFE0B8D001ADDB3 /* HGPushNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGPushNotificationViewController.h; sourceTree = "<group>"; };
+		D69E3E2E1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGPushNotificationViewController.m; sourceTree = "<group>"; };
+		D69E3E301FFE0C05001ADDB3 /* HGInspirationNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HGInspirationNotes.entitlements; sourceTree = "<group>"; };
 		D6ECB4E91FEC8A36005F328E /* HGBezierPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBezierPathViewController.h; sourceTree = "<group>"; };
 		D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGBezierPathViewController.m; sourceTree = "<group>"; };
 		D6ECB4ED1FEC8A5F005F328E /* HGSignView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSignView.h; sourceTree = "<group>"; };
 		D6ECB4EE1FEC8A5F005F328E /* HGSignView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGSignView.m; sourceTree = "<group>"; };
+		F747EEAD986CAED9274B522D /* CoreTelephony.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = "<group>"; };
+		FDB16120DA534A314A011153 /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DF6ED86968313F9FE0D210 /* libPods-HGInspirationNotes.a in Frameworks */,
+				862E031D5583A545AAF3F104 /* libXG-SDK.a in Frameworks */,
+				E753F0586F238159593B088C /* libz.tbd in Frameworks */,
+				25F4768DF39B149EA917F1B9 /* CFNetwork.framework in Frameworks */,
+				AAEE25DF4E62750F7217600C /* SystemConfiguration.framework in Frameworks */,
+				FB82C9E0C59D96C9E9B5BA15 /* CoreTelephony.framework in Frameworks */,
+				55AFC479451CA3E1AE6B2B51 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +232,22 @@
 				88E552E9A7FA5463BDA0BBD1 /* libPods-HGInspirationNotes.a */,
 				35BA988A868DFA73952BCE8E /* libPods-HGInspirationNotesTests.a */,
 				78131226AA33FEDF73F3D244 /* libPods-HGInspirationNotesUITests.a */,
+				44A0CDB336DF2311D751DF31 /* libz.tbd */,
+				B6D5EBAEE61F5A16AB5E7873 /* CFNetwork.framework */,
+				306FEA98F9596384AAAA5E70 /* SystemConfiguration.framework */,
+				F747EEAD986CAED9274B522D /* CoreTelephony.framework */,
+				FDB16120DA534A314A011153 /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E2287E05D5AB5782BF506FD /* XG */ = {
+			isa = PBXGroup;
+			children = (
+				79B1E3F6F8257C4CBBCE3792 /* libXG-SDK.a */,
+				3005C76C24A2970A2F22ACB1 /* XGPush.h */,
+			);
+			path = XG;
 			sourceTree = "<group>";
 		};
 		D60C1A321FEF4BA000FD90D7 /* Thread */ = {
@@ -247,6 +290,7 @@
 				D6779CCE1FE606B80092A2BF /* Products */,
 				1C21A75A4315FAC15DE30111 /* Pods */,
 				4F8D07B96ABEBCF0E4B1B8B0 /* Frameworks */,
+				8E2287E05D5AB5782BF506FD /* XG */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,10 +339,13 @@
 			children = (
 				D6779CD01FE606B80092A2BF /* AppDelegate.h */,
 				D6779CD11FE606B80092A2BF /* AppDelegate.m */,
+				D69E3E291FFDFDC7001ADDB3 /* AppDelegate+Notification.h */,
+				D69E3E2A1FFDFDC7001ADDB3 /* AppDelegate+Notification.m */,
 				D61449E21FFB26E000C56C0E /* AppDelegate+SetRenders.h */,
 				D61449E31FFB26E000C56C0E /* AppDelegate+SetRenders.m */,
 				D6779D3F1FE612FC0092A2BF /* AppDelegate+SwitchRoot.h */,
 				D6779D401FE612FC0092A2BF /* AppDelegate+SwitchRoot.m */,
+				D69E3E301FFE0C05001ADDB3 /* HGInspirationNotes.entitlements */,
 				D6779CD91FE606B80092A2BF /* Main.storyboard */,
 				D6779CDC1FE606B80092A2BF /* Assets.xcassets */,
 				D6779CDE1FE606B80092A2BF /* LaunchScreen.storyboard */,
@@ -311,6 +358,7 @@
 		D6779D061FE607830092A2BF /* Myway */ = {
 			isa = PBXGroup;
 			children = (
+				D69E3E241FFDFA3D001ADDB3 /* Notification */,
 				D60C1A331FEFBEBF00FD90D7 /* FMDB */,
 				D6ECB4E81FEC89DA005F328E /* UIBezierPath */,
 				D6779D4D1FE7941E0092A2BF /* DataStruct */,
@@ -513,6 +561,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D69E3E241FFDFA3D001ADDB3 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				D69E3E2C1FFE0B45001ADDB3 /* PushNotification */,
+				D69E3E251FFDFA52001ADDB3 /* LocalNotification */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		D69E3E251FFDFA52001ADDB3 /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				D69E3E261FFDFA80001ADDB3 /* HGLocalNotificationViewController.h */,
+				D69E3E271FFDFA80001ADDB3 /* HGLocalNotificationViewController.m */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
+		D69E3E2C1FFE0B45001ADDB3 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				D69E3E2D1FFE0B8D001ADDB3 /* HGPushNotificationViewController.h */,
+				D69E3E2E1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m */,
+			);
+			path = PushNotification;
+			sourceTree = "<group>";
+		};
 		D6ECB4E81FEC89DA005F328E /* UIBezierPath */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,7 +683,15 @@
 				TargetAttributes = {
 					D6779CCC1FE606B80092A2BF = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					D6779CE71FE606B80092A2BF = {
 						CreatedOnToolsVersion = 9.2;
@@ -842,6 +925,8 @@
 				D6ECB4EB1FEC8A36005F328E /* HGBezierPathViewController.m in Sources */,
 				D67AA6101FF2310B0085F52C /* HGDBBaseModel.m in Sources */,
 				D6779D481FE670F60092A2BF /* HGSignin.m in Sources */,
+				D69E3E2F1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m in Sources */,
+				D69E3E281FFDFA80001ADDB3 /* HGLocalNotificationViewController.m in Sources */,
 				D6779D1E1FE609BB0092A2BF /* HGOperation.m in Sources */,
 				D673A64B1FF09EF500B1E787 /* HGFMDBViewController.m in Sources */,
 				D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */,
@@ -862,6 +947,7 @@
 				D6779CD21FE606B80092A2BF /* AppDelegate.m in Sources */,
 				D6ECB4EF1FEC8A5F005F328E /* HGSignView.m in Sources */,
 				D6779D1B1FE6098E0092A2BF /* HGOperationQueueViewController.m in Sources */,
+				D69E3E2B1FFDFDC7001ADDB3 /* AppDelegate+Notification.m in Sources */,
 				D6779D2C1FE60B3C0092A2BF /* AFAppDotNetAPIClient.m in Sources */,
 				D6779CE31FE606B80092A2BF /* main.m in Sources */,
 				D6779D501FE794440092A2BF /* HGDataStructViewController.m in Sources */,
@@ -1028,12 +1114,17 @@
 			baseConfigurationReference = 1B9230AD2822204C7D945B9D /* Pods-HGInspirationNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = HGInspirationNotes/HGInspirationNotes.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VE43YF4AD7;
 				INFOPLIST_FILE = HGInspirationNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.TravelManagement;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myway.fengbao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a880a91e-ae4d-45d6-a872-dba973e4ce06";
+				PROVISIONING_PROFILE_SPECIFIER = fengbao;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1043,12 +1134,17 @@
 			baseConfigurationReference = BD6EDB6A0082707828ACDEA4 /* Pods-HGInspirationNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = HGInspirationNotes/HGInspirationNotes.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VE43YF4AD7;
 				INFOPLIST_FILE = HGInspirationNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.TravelManagement;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myway.fengbao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a880a91e-ae4d-45d6-a872-dba973e4ce06";
+				PROVISIONING_PROFILE_SPECIFIER = fengbao;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
