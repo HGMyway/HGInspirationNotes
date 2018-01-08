@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
+
 #import "AppDelegate+SetRenders.h"
 #import "AppDelegate+Notification.h"
-#import "XGPush.h"
-#import <UserNotifications/UserNotifications.h>
+#import "AppDelegate+Map.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +23,9 @@
 
 
 	// Override point for customization after application launch.
-	[self setGPush:launchOptions];
 
+	[self setBaiduMap];
+	[self setGPush:launchOptions];
 	[self userNotification];
 	[self startMonitor];
 	return YES;

@@ -129,6 +129,7 @@
                         <segue destination="Msk-j6-x9H" kind="show" identifier="rootToLocalNotification" id="aJM-1w-7Hh"/>
                         <segue destination="UmL-wz-KQC" kind="show" identifier="rootToPushNotification" id="GkP-UD-hUh"/>
                         <segue destination="4is-jF-kfa" kind="show" identifier="rootToMKMapView" id="8wm-BX-mt6"/>
+                        <segue destination="AO5-iI-X1U" kind="show" identifier="rootToBaiduMapView" id="J67-Of-aqS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNe-AP-yZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -591,6 +592,134 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOC-88-gm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8348" y="2354.5727136431788"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="flH-l3-CYc">
+            <objects>
+                <viewController id="AO5-iI-X1U" customClass="HGBaiduMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lVu-Ca-1rr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oI-6e-Lu1" customClass="BMKMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJr-9F-CZj">
+                                <rect key="frame" x="0.0" y="559" width="375" height="59"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-3y-HbI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="changeMapTypeAction:" destination="AO5-iI-X1U" eventType="valueChanged" id="SFM-k6-gHg"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xEy-4E-Rhf">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="路况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-02-Pdx">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sNW-pI-e2P">
+                                                <rect key="frame" x="40.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="setSwitchValueChanged:" destination="AO5-iI-X1U" eventType="valueChanged" id="crE-wv-Bli"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楼宇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzb-4b-mhh">
+                                                <rect key="frame" x="95" y="0.0" width="35" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M8x-CD-qWH">
+                                                <rect key="frame" x="135.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="setSwitchValueChanged:" destination="AO5-iI-X1U" eventType="valueChanged" id="0If-O1-z3P"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph4-re-dc3">
+                                                <rect key="frame" x="190.5" y="0.0" width="35" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NfQ-WE-k7N">
+                                                <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="setSwitchValueChanged:" destination="AO5-iI-X1U" eventType="valueChanged" id="Jd1-Qo-vfP"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="底图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsl-0b-ArL">
+                                                <rect key="frame" x="285.5" y="0.0" width="35" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9De-OU-jLH">
+                                                <rect key="frame" x="326" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="setSwitchValueChanged:" destination="AO5-iI-X1U" eventType="valueChanged" id="tLj-vT-PO7"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96603983640000002" green="0.75708299879999996" blue="0.3041850626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xEy-4E-Rhf" secondAttribute="trailing" id="Bks-Y1-ycR"/>
+                                    <constraint firstItem="ucN-3y-HbI" firstAttribute="leading" secondItem="NJr-9F-CZj" secondAttribute="leading" id="EaN-84-qRq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ucN-3y-HbI" secondAttribute="trailing" id="GcK-cu-Y0b"/>
+                                    <constraint firstItem="ucN-3y-HbI" firstAttribute="top" secondItem="NJr-9F-CZj" secondAttribute="top" id="JOC-k4-1Uf"/>
+                                    <constraint firstItem="xEy-4E-Rhf" firstAttribute="top" secondItem="ucN-3y-HbI" secondAttribute="bottom" id="LYs-pj-4NH"/>
+                                    <constraint firstItem="xEy-4E-Rhf" firstAttribute="top" secondItem="ucN-3y-HbI" secondAttribute="bottom" id="NYa-4e-sqK"/>
+                                    <constraint firstItem="xEy-4E-Rhf" firstAttribute="leading" secondItem="NJr-9F-CZj" secondAttribute="leading" id="jxl-yH-BcS"/>
+                                    <constraint firstItem="xEy-4E-Rhf" firstAttribute="top" secondItem="ucN-3y-HbI" secondAttribute="bottom" id="kbj-hP-XXv"/>
+                                    <constraint firstAttribute="bottom" secondItem="xEy-4E-Rhf" secondAttribute="bottom" id="oax-f2-US8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0oI-6e-Lu1" firstAttribute="top" secondItem="DFG-Nf-Wli" secondAttribute="top" id="2gx-W2-aHc"/>
+                            <constraint firstItem="0oI-6e-Lu1" firstAttribute="leading" secondItem="DFG-Nf-Wli" secondAttribute="leading" id="2lP-X6-v2v"/>
+                            <constraint firstItem="NJr-9F-CZj" firstAttribute="trailing" secondItem="DFG-Nf-Wli" secondAttribute="trailing" id="6pg-AL-XWo"/>
+                            <constraint firstItem="NJr-9F-CZj" firstAttribute="leading" secondItem="DFG-Nf-Wli" secondAttribute="leading" id="bRe-1C-90k"/>
+                            <constraint firstItem="DFG-Nf-Wli" firstAttribute="bottom" secondItem="0oI-6e-Lu1" secondAttribute="bottom" id="bqi-wp-SvA"/>
+                            <constraint firstItem="DFG-Nf-Wli" firstAttribute="bottom" secondItem="NJr-9F-CZj" secondAttribute="bottom" id="flS-7p-7gP"/>
+                            <constraint firstItem="DFG-Nf-Wli" firstAttribute="trailing" secondItem="0oI-6e-Lu1" secondAttribute="trailing" id="nWB-QB-fLu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DFG-Nf-Wli"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="9gl-o9-ClK">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="rym-jk-QCw">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="aw2-Xd-u7J">
+                                <rect key="frame" x="238" y="7" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="基本"/>
+                                    <segment title="自定义"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMapStyleAction:" destination="AO5-iI-X1U" eventType="valueChanged" id="Pre-vj-oRZ"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="baiduMapView" destination="0oI-6e-Lu1" id="cOX-yi-DzQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dc-E6-KhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9101.6000000000004" y="2354.5727136431788"/>
         </scene>
         <!--Item-->
         <scene sceneID="geY-k0-HOf">

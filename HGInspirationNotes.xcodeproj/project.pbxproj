@@ -17,6 +17,10 @@
 		D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */; };
 		D667634F2001C926003D56C2 /* HGMKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667634E2001C926003D56C2 /* HGMKMapViewController.m */; };
 		D66763532002480B003D56C2 /* HGBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66763522002480B003D56C2 /* HGBaiduMapViewController.m */; };
+		D667635620025144003D56C2 /* AppDelegate+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D667635520025144003D56C2 /* AppDelegate+Map.m */; };
+		D667635B200258E4003D56C2 /* custom_config_午夜蓝 in Resources */ = {isa = PBXBuildFile; fileRef = D6676358200258E3003D56C2 /* custom_config_午夜蓝 */; };
+		D667635C200258E4003D56C2 /* custom_config_黑夜 in Resources */ = {isa = PBXBuildFile; fileRef = D6676359200258E3003D56C2 /* custom_config_黑夜 */; };
+		D667635D200258E4003D56C2 /* custom_config_清新蓝 in Resources */ = {isa = PBXBuildFile; fileRef = D667635A200258E4003D56C2 /* custom_config_清新蓝 */; };
 		D673A64B1FF09EF500B1E787 /* HGFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A64A1FF09EF500B1E787 /* HGFMDBViewController.m */; };
 		D673A64F1FF0A62D00B1E787 /* HGSqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A64E1FF0A62D00B1E787 /* HGSqlManager.m */; };
 		D673A6521FF0A86D00B1E787 /* HGSqlManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A6511FF0A86D00B1E787 /* HGSqlManagerBase.m */; };
@@ -103,6 +107,11 @@
 		D667634E2001C926003D56C2 /* HGMKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMKMapViewController.m; sourceTree = "<group>"; };
 		D66763512002480B003D56C2 /* HGBaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBaiduMapViewController.h; sourceTree = "<group>"; };
 		D66763522002480B003D56C2 /* HGBaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGBaiduMapViewController.m; sourceTree = "<group>"; };
+		D667635420025144003D56C2 /* AppDelegate+Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Map.h"; sourceTree = "<group>"; };
+		D667635520025144003D56C2 /* AppDelegate+Map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Map.m"; sourceTree = "<group>"; };
+		D6676358200258E3003D56C2 /* custom_config_午夜蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_午夜蓝"; sourceTree = "<group>"; };
+		D6676359200258E3003D56C2 /* custom_config_黑夜 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_黑夜"; sourceTree = "<group>"; };
+		D667635A200258E4003D56C2 /* custom_config_清新蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_清新蓝"; sourceTree = "<group>"; };
 		D673A6491FF09EF500B1E787 /* HGFMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGFMDBViewController.h; sourceTree = "<group>"; };
 		D673A64A1FF09EF500B1E787 /* HGFMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGFMDBViewController.m; sourceTree = "<group>"; };
 		D673A64D1FF0A62D00B1E787 /* HGSqlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSqlManager.h; sourceTree = "<group>"; };
@@ -296,10 +305,21 @@
 		D6676350200247F7003D56C2 /* BaiduMap */ = {
 			isa = PBXGroup;
 			children = (
+				D6676357200258C7003D56C2 /* SourceFile */,
 				D66763512002480B003D56C2 /* HGBaiduMapViewController.h */,
 				D66763522002480B003D56C2 /* HGBaiduMapViewController.m */,
 			);
 			path = BaiduMap;
+			sourceTree = "<group>";
+		};
+		D6676357200258C7003D56C2 /* SourceFile */ = {
+			isa = PBXGroup;
+			children = (
+				D6676359200258E3003D56C2 /* custom_config_黑夜 */,
+				D667635A200258E4003D56C2 /* custom_config_清新蓝 */,
+				D6676358200258E3003D56C2 /* custom_config_午夜蓝 */,
+			);
+			path = SourceFile;
 			sourceTree = "<group>";
 		};
 		D673A64C1FF0A5B800B1E787 /* Manager */ = {
@@ -372,6 +392,8 @@
 			children = (
 				D6779CD01FE606B80092A2BF /* AppDelegate.h */,
 				D6779CD11FE606B80092A2BF /* AppDelegate.m */,
+				D667635420025144003D56C2 /* AppDelegate+Map.h */,
+				D667635520025144003D56C2 /* AppDelegate+Map.m */,
 				D69E3E291FFDFDC7001ADDB3 /* AppDelegate+Notification.h */,
 				D69E3E2A1FFDFDC7001ADDB3 /* AppDelegate+Notification.m */,
 				D61449E21FFB26E000C56C0E /* AppDelegate+SetRenders.h */,
@@ -765,7 +787,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6779CE01FE606B80092A2BF /* LaunchScreen.storyboard in Resources */,
+				D667635B200258E4003D56C2 /* custom_config_午夜蓝 in Resources */,
 				D6779CDD1FE606B80092A2BF /* Assets.xcassets in Resources */,
+				D667635C200258E4003D56C2 /* custom_config_黑夜 in Resources */,
+				D667635D200258E4003D56C2 /* custom_config_清新蓝 in Resources */,
 				D6779CDB1FE606B80092A2BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -973,6 +998,7 @@
 				D6779D151FE609440092A2BF /* HGGCDViewController.m in Sources */,
 				D6779D3B1FE60FB40092A2BF /* HGMethodInvalidViewController.m in Sources */,
 				D667634F2001C926003D56C2 /* HGMKMapViewController.m in Sources */,
+				D667635620025144003D56C2 /* AppDelegate+Map.m in Sources */,
 				D6779D931FE931A50092A2BF /* HGThread.m in Sources */,
 				D67AA61D1FF4D2BF0085F52C /* HGDBBaseModel+Sql.m in Sources */,
 				D6779D321FE60B680092A2BF /* NetworkAsst.m in Sources */,

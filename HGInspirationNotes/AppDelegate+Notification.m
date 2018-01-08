@@ -18,7 +18,7 @@
 #pragma mark -
 - (void)setGPush:(NSDictionary *)launchOptions{
 		//打开debug开关
-	[[XGPush defaultManager] setEnableDebug:YES];
+	[[XGPush defaultManager] setEnableDebug:NO];
 
 	[[XGPush defaultManager] startXGWithAppID:2200274594 appKey:@"I64RTHL33I9L" delegate:self];
 	[[XGPush defaultManager] reportXGNotificationInfo:launchOptions];

@@ -58,7 +58,9 @@
 }
 - (IBAction)signButtonAction:(UIButton *)sender {
 	__weak typeof(self) weakSelf = self;
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 	[[NetworkAsst defaultNetwork] hg_signinParam:[self.hgsignin toParam] callback:^(NSError *error, NSDictionary *data, NSURLSessionDataTask *dataTask) {
+		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 		if (error == nil) {
 			if ([HGSignin isLogin]) {
 				[HGSignin setPreUserEmail:weakSelf.hgsignin.userName];

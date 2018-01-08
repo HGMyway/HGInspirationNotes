@@ -43,7 +43,8 @@
 	[self addCellTitle:@"LocalNotification" segueName:@"rootToLocalNotification"];
 	[self addCellTitle:@"PushNotification" segueName:@"rootToPushNotification"];
 	[self addCellTitle:@"MKMapView" segueName:@"rootToMKMapView"];
-	
+	[self addCellTitle:@"BaiduMapView" segueName:@"rootToBaiduMapView"];
+
 
 
 
