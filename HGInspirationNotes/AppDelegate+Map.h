@@ -9,5 +9,6 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (Map)
-- (void)setBaiduMap;
+//- (void)setBaiduMap;
+- (void)setMAMap;
 @end

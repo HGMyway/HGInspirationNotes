@@ -14,7 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BaiduMapKit (3.4.2)
+  - AMap3DMap (5.7.0):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.4.3)
+  - AMapLocation (2.6.0):
+    - AMapFoundation (~> 1.4)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
@@ -30,7 +34,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - BaiduMapKit (~> 3.4.2)
+  - AMap3DMap (~> 5.7.0)
+  - AMapLocation (~> 2.6.0)
   - FMDB (~> 2.7.2)
   - QQ_XGPush (~> 3.0.1)
   - ReactiveCocoa (~> 2.5.0)
@@ -38,12 +43,14 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BaiduMapKit: f61b19ecf07a3f2deede72b221b366bf698739ed
+  AMap3DMap: 97afc57b88628237d916991ac31795eb7bde3f63
+  AMapFoundation: 973682cfe60b92efd73a8ef8f1144fa0fa8e1296
+  AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   QQ_XGPush: 2824cca429269a397cff8cf1028216412527c59e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: f8e256b0570c8648de0701f11e4c97fc38ec485e
+PODFILE CHECKSUM: 3ad4f539e90006e4f8fb2fa56a316b0c63156c33
 
 COCOAPODS: 1.3.1

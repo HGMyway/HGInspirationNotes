@@ -8,6 +8,8 @@
 
 #import "HGMainTableViewController.h"
 #import "AppDelegate+SwitchRoot.h"
+
+#import "HGMAMapViewController.h"
 @interface HGMainTableViewController ()
 @property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *classNames;
@@ -43,8 +45,9 @@
 	[self addCellTitle:@"LocalNotification" segueName:@"rootToLocalNotification"];
 	[self addCellTitle:@"PushNotification" segueName:@"rootToPushNotification"];
 	[self addCellTitle:@"MKMapView" segueName:@"rootToMKMapView"];
-	[self addCellTitle:@"BaiduMapView" segueName:@"rootToBaiduMapView"];
+	[self addCellTitle:@"MAMapView" segueName:@"rootToMAMapView"];
 
+	[self addCellTitle:@"Responder" segueName:@"rootToResponder"];
 
 
 
@@ -88,7 +91,12 @@
 	return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-	[self performSegueWithIdentifier:[self.segueNames objectAtIndex:indexPath.row] sender:[self.titles objectAtIndex:indexPath.row]];
+	if ([[self.segueNames objectAtIndex:indexPath.row] isEqualToString:@"rootToMAMapView"]) {
+		[self.navigationController pushViewController:[HGMAMapViewController shard] animated:YES];
+	}else{
+		[self performSegueWithIdentifier:[self.segueNames objectAtIndex:indexPath.row] sender:[self.titles objectAtIndex:indexPath.row]];
+	}
+
 }
 
 /*

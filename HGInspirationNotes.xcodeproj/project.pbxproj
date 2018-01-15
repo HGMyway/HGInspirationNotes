@@ -21,6 +21,11 @@
 		D667635B200258E4003D56C2 /* custom_config_午夜蓝 in Resources */ = {isa = PBXBuildFile; fileRef = D6676358200258E3003D56C2 /* custom_config_午夜蓝 */; };
 		D667635C200258E4003D56C2 /* custom_config_黑夜 in Resources */ = {isa = PBXBuildFile; fileRef = D6676359200258E3003D56C2 /* custom_config_黑夜 */; };
 		D667635D200258E4003D56C2 /* custom_config_清新蓝 in Resources */ = {isa = PBXBuildFile; fileRef = D667635A200258E4003D56C2 /* custom_config_清新蓝 */; };
+		D669A01E200C892600AA1A6E /* HGResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D669A01D200C892600AA1A6E /* HGResponderViewController.m */; };
+		D669A022200C894300AA1A6E /* HGResponderTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D669A021200C894300AA1A6E /* HGResponderTestView.m */; };
+		D669A025200C987800AA1A6E /* HGSuperResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D669A024200C987800AA1A6E /* HGSuperResponderView.m */; };
+		D669A028200C9AF800AA1A6E /* UIApplication+sendevent.m in Sources */ = {isa = PBXBuildFile; fileRef = D669A027200C9AF800AA1A6E /* UIApplication+sendevent.m */; };
+		D669A02B200C9CEB00AA1A6E /* UIResponder+hg.m in Sources */ = {isa = PBXBuildFile; fileRef = D669A02A200C9CEB00AA1A6E /* UIResponder+hg.m */; };
 		D673A64B1FF09EF500B1E787 /* HGFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A64A1FF09EF500B1E787 /* HGFMDBViewController.m */; };
 		D673A64F1FF0A62D00B1E787 /* HGSqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A64E1FF0A62D00B1E787 /* HGSqlManager.m */; };
 		D673A6521FF0A86D00B1E787 /* HGSqlManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D673A6511FF0A86D00B1E787 /* HGSqlManagerBase.m */; };
@@ -57,6 +62,10 @@
 		D69E3E281FFDFA80001ADDB3 /* HGLocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69E3E271FFDFA80001ADDB3 /* HGLocalNotificationViewController.m */; };
 		D69E3E2B1FFDFDC7001ADDB3 /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = D69E3E2A1FFDFDC7001ADDB3 /* AppDelegate+Notification.m */; };
 		D69E3E2F1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69E3E2E1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m */; };
+		D6CD264A20031CF200760C9C /* HGMAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD264920031CF200760C9C /* HGMAMapViewController.m */; };
+		D6CD264D200332A200760C9C /* running_record.json in Resources */ = {isa = PBXBuildFile; fileRef = D6CD264C200332A200760C9C /* running_record.json */; };
+		D6E8BBAC20047D88009082FE /* HGFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E8BBAB20047D88009082FE /* HGFileManager.m */; };
+		D6E8BBAF2005A328009082FE /* HGMATools.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E8BBAE2005A328009082FE /* HGMATools.m */; };
 		D6ECB4EB1FEC8A36005F328E /* HGBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */; };
 		D6ECB4EF1FEC8A5F005F328E /* HGSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ECB4EE1FEC8A5F005F328E /* HGSignView.m */; };
 		E3395300E2C9D2ACAAE7D057 /* libPods-HGInspirationNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BA988A868DFA73952BCE8E /* libPods-HGInspirationNotesTests.a */; };
@@ -112,6 +121,16 @@
 		D6676358200258E3003D56C2 /* custom_config_午夜蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_午夜蓝"; sourceTree = "<group>"; };
 		D6676359200258E3003D56C2 /* custom_config_黑夜 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_黑夜"; sourceTree = "<group>"; };
 		D667635A200258E4003D56C2 /* custom_config_清新蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_清新蓝"; sourceTree = "<group>"; };
+		D669A01C200C892600AA1A6E /* HGResponderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGResponderViewController.h; sourceTree = "<group>"; };
+		D669A01D200C892600AA1A6E /* HGResponderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGResponderViewController.m; sourceTree = "<group>"; };
+		D669A020200C894300AA1A6E /* HGResponderTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGResponderTestView.h; sourceTree = "<group>"; };
+		D669A021200C894300AA1A6E /* HGResponderTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGResponderTestView.m; sourceTree = "<group>"; };
+		D669A023200C987800AA1A6E /* HGSuperResponderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSuperResponderView.h; sourceTree = "<group>"; };
+		D669A024200C987800AA1A6E /* HGSuperResponderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGSuperResponderView.m; sourceTree = "<group>"; };
+		D669A026200C9AF800AA1A6E /* UIApplication+sendevent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+sendevent.h"; sourceTree = "<group>"; };
+		D669A027200C9AF800AA1A6E /* UIApplication+sendevent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+sendevent.m"; sourceTree = "<group>"; };
+		D669A029200C9CEB00AA1A6E /* UIResponder+hg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+hg.h"; sourceTree = "<group>"; };
+		D669A02A200C9CEB00AA1A6E /* UIResponder+hg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+hg.m"; sourceTree = "<group>"; };
 		D673A6491FF09EF500B1E787 /* HGFMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGFMDBViewController.h; sourceTree = "<group>"; };
 		D673A64A1FF09EF500B1E787 /* HGFMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGFMDBViewController.m; sourceTree = "<group>"; };
 		D673A64D1FF0A62D00B1E787 /* HGSqlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSqlManager.h; sourceTree = "<group>"; };
@@ -186,6 +205,13 @@
 		D69E3E2D1FFE0B8D001ADDB3 /* HGPushNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGPushNotificationViewController.h; sourceTree = "<group>"; };
 		D69E3E2E1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGPushNotificationViewController.m; sourceTree = "<group>"; };
 		D69E3E301FFE0C05001ADDB3 /* HGInspirationNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HGInspirationNotes.entitlements; sourceTree = "<group>"; };
+		D6CD264820031CF200760C9C /* HGMAMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMAMapViewController.h; sourceTree = "<group>"; };
+		D6CD264920031CF200760C9C /* HGMAMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMAMapViewController.m; sourceTree = "<group>"; };
+		D6CD264C200332A200760C9C /* running_record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = running_record.json; sourceTree = "<group>"; };
+		D6E8BBAA20047D88009082FE /* HGFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGFileManager.h; sourceTree = "<group>"; };
+		D6E8BBAB20047D88009082FE /* HGFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGFileManager.m; sourceTree = "<group>"; };
+		D6E8BBAD2005A328009082FE /* HGMATools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMATools.h; sourceTree = "<group>"; };
+		D6E8BBAE2005A328009082FE /* HGMATools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMATools.m; sourceTree = "<group>"; };
 		D6ECB4E91FEC8A36005F328E /* HGBezierPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBezierPathViewController.h; sourceTree = "<group>"; };
 		D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGBezierPathViewController.m; sourceTree = "<group>"; };
 		D6ECB4ED1FEC8A5F005F328E /* HGSignView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSignView.h; sourceTree = "<group>"; };
@@ -287,6 +313,7 @@
 		D667634A2001C8F4003D56C2 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				D6CD264720031CD000760C9C /* MAMap */,
 				D6676350200247F7003D56C2 /* BaiduMap */,
 				D667634C2001C907003D56C2 /* MKMapView */,
 			);
@@ -320,6 +347,31 @@
 				D6676358200258E3003D56C2 /* custom_config_午夜蓝 */,
 			);
 			path = SourceFile;
+			sourceTree = "<group>";
+		};
+		D669A01B200C88F200AA1A6E /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				D669A01F200C892E00AA1A6E /* UIVIew */,
+				D669A01C200C892600AA1A6E /* HGResponderViewController.h */,
+				D669A01D200C892600AA1A6E /* HGResponderViewController.m */,
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		D669A01F200C892E00AA1A6E /* UIVIew */ = {
+			isa = PBXGroup;
+			children = (
+				D669A020200C894300AA1A6E /* HGResponderTestView.h */,
+				D669A021200C894300AA1A6E /* HGResponderTestView.m */,
+				D669A023200C987800AA1A6E /* HGSuperResponderView.h */,
+				D669A024200C987800AA1A6E /* HGSuperResponderView.m */,
+				D669A026200C9AF800AA1A6E /* UIApplication+sendevent.h */,
+				D669A027200C9AF800AA1A6E /* UIApplication+sendevent.m */,
+				D669A029200C9CEB00AA1A6E /* UIResponder+hg.h */,
+				D669A02A200C9CEB00AA1A6E /* UIResponder+hg.m */,
+			);
+			path = UIVIew;
 			sourceTree = "<group>";
 		};
 		D673A64C1FF0A5B800B1E787 /* Manager */ = {
@@ -413,6 +465,7 @@
 		D6779D061FE607830092A2BF /* Myway */ = {
 			isa = PBXGroup;
 			children = (
+				D669A01B200C88F200AA1A6E /* UIResponder */,
 				D667634A2001C8F4003D56C2 /* MapKit */,
 				D69E3E241FFDFA3D001ADDB3 /* Notification */,
 				D60C1A331FEFBEBF00FD90D7 /* FMDB */,
@@ -644,6 +697,36 @@
 			path = PushNotification;
 			sourceTree = "<group>";
 		};
+		D6CD264720031CD000760C9C /* MAMap */ = {
+			isa = PBXGroup;
+			children = (
+				D6E8BBA920047D6E009082FE /* Model */,
+				D6CD264B2003329500760C9C /* SourceFile */,
+				D6CD264820031CF200760C9C /* HGMAMapViewController.h */,
+				D6CD264920031CF200760C9C /* HGMAMapViewController.m */,
+			);
+			path = MAMap;
+			sourceTree = "<group>";
+		};
+		D6CD264B2003329500760C9C /* SourceFile */ = {
+			isa = PBXGroup;
+			children = (
+				D6CD264C200332A200760C9C /* running_record.json */,
+			);
+			path = SourceFile;
+			sourceTree = "<group>";
+		};
+		D6E8BBA920047D6E009082FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6E8BBAA20047D88009082FE /* HGFileManager.h */,
+				D6E8BBAB20047D88009082FE /* HGFileManager.m */,
+				D6E8BBAD2005A328009082FE /* HGMATools.h */,
+				D6E8BBAE2005A328009082FE /* HGMATools.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D6ECB4E81FEC89DA005F328E /* UIBezierPath */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,6 +873,7 @@
 				D667635B200258E4003D56C2 /* custom_config_午夜蓝 in Resources */,
 				D6779CDD1FE606B80092A2BF /* Assets.xcassets in Resources */,
 				D667635C200258E4003D56C2 /* custom_config_黑夜 in Resources */,
+				D6CD264D200332A200760C9C /* running_record.json in Resources */,
 				D667635D200258E4003D56C2 /* custom_config_清新蓝 in Resources */,
 				D6779CDB1FE606B80092A2BF /* Main.storyboard in Resources */,
 			);
@@ -819,7 +903,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HGInspirationNotes/Pods-HGInspirationNotes-resources.sh",
-				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -977,7 +1061,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D669A022200C894300AA1A6E /* HGResponderTestView.m in Sources */,
 				D6779D2F1FE60B510092A2BF /* NetworkBase.m in Sources */,
+				D6E8BBAC20047D88009082FE /* HGFileManager.m in Sources */,
 				D6779D4C1FE6AD9F0092A2BF /* HGBaseModel.m in Sources */,
 				D6779D451FE630CC0092A2BF /* HGUser.m in Sources */,
 				D6779D101FE609040092A2BF /* HGURLSessionViewController.m in Sources */,
@@ -991,15 +1077,19 @@
 				D69E3E281FFDFA80001ADDB3 /* HGLocalNotificationViewController.m in Sources */,
 				D6779D1E1FE609BB0092A2BF /* HGOperation.m in Sources */,
 				D673A64B1FF09EF500B1E787 /* HGFMDBViewController.m in Sources */,
+				D669A02B200C9CEB00AA1A6E /* UIResponder+hg.m in Sources */,
 				D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */,
 				D67AA6091FF20AF50085F52C /* HGBaseViewController.m in Sources */,
 				D6779D381FE60DCE0092A2BF /* HGSigninViewController.m in Sources */,
 				D61449E71FFB752C00C56C0E /* UIView+HookForMainThreadUI.m in Sources */,
 				D6779D151FE609440092A2BF /* HGGCDViewController.m in Sources */,
+				D669A028200C9AF800AA1A6E /* UIApplication+sendevent.m in Sources */,
 				D6779D3B1FE60FB40092A2BF /* HGMethodInvalidViewController.m in Sources */,
+				D6CD264A20031CF200760C9C /* HGMAMapViewController.m in Sources */,
 				D667634F2001C926003D56C2 /* HGMKMapViewController.m in Sources */,
 				D667635620025144003D56C2 /* AppDelegate+Map.m in Sources */,
 				D6779D931FE931A50092A2BF /* HGThread.m in Sources */,
+				D669A025200C987800AA1A6E /* HGSuperResponderView.m in Sources */,
 				D67AA61D1FF4D2BF0085F52C /* HGDBBaseModel+Sql.m in Sources */,
 				D6779D321FE60B680092A2BF /* NetworkAsst.m in Sources */,
 				D6779D281FE60A780092A2BF /* UIStoryboard+HGStoryboard.m in Sources */,
@@ -1007,8 +1097,10 @@
 				D6779D0A1FE607BC0092A2BF /* HGMainTableViewController.m in Sources */,
 				D67AA6131FF2313B0085F52C /* HGUserInfoDBModel.m in Sources */,
 				D66763532002480B003D56C2 /* HGBaiduMapViewController.m in Sources */,
+				D6E8BBAF2005A328009082FE /* HGMATools.m in Sources */,
 				D673A6521FF0A86D00B1E787 /* HGSqlManagerBase.m in Sources */,
 				D6779D411FE612FC0092A2BF /* AppDelegate+SwitchRoot.m in Sources */,
+				D669A01E200C892600AA1A6E /* HGResponderViewController.m in Sources */,
 				D6779CD21FE606B80092A2BF /* AppDelegate.m in Sources */,
 				D6ECB4EF1FEC8A5F005F328E /* HGSignView.m in Sources */,
 				D6779D1B1FE6098E0092A2BF /* HGOperationQueueViewController.m in Sources */,

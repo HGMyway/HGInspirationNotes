@@ -26,6 +26,7 @@ NSString * const CustomErrorDomain  = @"com.myway.error";
 	return asst;
 }
 - (NSURLSessionDataTask *)hg_signinParam:(NSDictionary *)param callback:(Net_callback)callBack{
+
 	self.removesKeysWithNullValues = NO;
 	return [self af_request_af:url_sso_login baseURLType:SSOHOME networkType:POST params:param callback:^(NSError *error, NSDictionary *data,NSURLSessionDataTask *dataTask ) {
 

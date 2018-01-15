@@ -6,8 +6,7 @@
 //  Copyright © 2017年 小雨很美. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface HGGCDViewController : UIViewController
+#import "HGBaseViewController.h"
+@interface HGGCDViewController : HGBaseViewController
 
 @end

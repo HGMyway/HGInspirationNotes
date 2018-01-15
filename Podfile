@@ -15,8 +15,10 @@ target 'HGInspirationNotes' do
 	pod 'FMDB', '~> 2.7.2'
 	
 	pod 'QQ_XGPush', '~> 3.0.1'
-	pod 'BaiduMapKit', '~> 3.4.2'
-	
+#	pod 'BaiduMapKit', '~> 3.4.2'
+pod 'AMap3DMap', '~> 5.7.0'
+pod 'AMapLocation', '~> 2.6.0'
+
 	#   pod 'GYDataCenter', '~> 0.1.1'
 	#2.5 纯 OC
 	#3.0 正式版支持 Swift 1.2

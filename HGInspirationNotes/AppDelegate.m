@@ -24,7 +24,7 @@
 
 	// Override point for customization after application launch.
 
-	[self setBaiduMap];
+	[self setMAMap];
 	[self setGPush:launchOptions];
 	[self userNotification];
 	[self startMonitor];
