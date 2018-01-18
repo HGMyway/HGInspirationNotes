@@ -7,7 +7,8 @@
 //
 
 #import "HGResponderViewController.h"
-
+#import "HGMutableArray.h"
+#import "HGArray.h"
 @interface HGResponderViewController ()
 
 @end
@@ -17,11 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+	[self testMutableArray];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)testMutableArray{
+	NSMutableArray *array = [NSMutableArray array];
+	[array addObject:@"dd"];
+	NSLog(@"%@",array);
 }
 
 /*

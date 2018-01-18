@@ -15,6 +15,14 @@
 		D61449E41FFB26E000C56C0E /* AppDelegate+SetRenders.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E31FFB26E000C56C0E /* AppDelegate+SetRenders.m */; };
 		D61449E71FFB752C00C56C0E /* UIView+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E61FFB752C00C56C0E /* UIView+HookForMainThreadUI.m */; };
 		D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */; };
+		D66073B9200CD4D500F974DE /* HGArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073B8200CD4D400F974DE /* HGArray.m */; };
+		D66073BC200CD4E500F974DE /* HGMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073BB200CD4E500F974DE /* HGMutableArray.m */; };
+		D66073BF200CD7A400F974DE /* NSArray+hg.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073BE200CD7A400F974DE /* NSArray+hg.m */; };
+		D66073C2200CD7B200F974DE /* NSMutableArray+HG.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073C1200CD7B200F974DE /* NSMutableArray+HG.m */; };
+		D66073C6200CE6AD00F974DE /* HGSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073C5200CE6AD00F974DE /* HGSafeMutableArray.m */; };
+		D66073C9200D97CB00F974DE /* HGGesturePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073C8200D97CB00F974DE /* HGGesturePasswordView.m */; };
+		D66073CD200D997E00F974DE /* HGGesturePointLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073CC200D997E00F974DE /* HGGesturePointLayer.m */; };
+		D66073D1200DB1FC00F974DE /* HGGesturePathLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D66073D0200DB1FC00F974DE /* HGGesturePathLayer.m */; };
 		D667634F2001C926003D56C2 /* HGMKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667634E2001C926003D56C2 /* HGMKMapViewController.m */; };
 		D66763532002480B003D56C2 /* HGBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66763522002480B003D56C2 /* HGBaiduMapViewController.m */; };
 		D667635620025144003D56C2 /* AppDelegate+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D667635520025144003D56C2 /* AppDelegate+Map.m */; };
@@ -66,6 +74,10 @@
 		D6CD264D200332A200760C9C /* running_record.json in Resources */ = {isa = PBXBuildFile; fileRef = D6CD264C200332A200760C9C /* running_record.json */; };
 		D6E8BBAC20047D88009082FE /* HGFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E8BBAB20047D88009082FE /* HGFileManager.m */; };
 		D6E8BBAF2005A328009082FE /* HGMATools.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E8BBAE2005A328009082FE /* HGMATools.m */; };
+		D6EC1670200DD41900833737 /* HGGesturePathIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EC166F200DD41900833737 /* HGGesturePathIndicatorView.m */; };
+		D6EC1673200DD69200833737 /* HGGesturePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EC1672200DD69200833737 /* HGGesturePasswordViewController.m */; };
+		D6EC16B7200DE3E100833737 /* AppDelegate+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EC16B6200DE3E100833737 /* AppDelegate+OpenURL.m */; };
+		D6EC16D5200EDADE00833737 /* HGGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EC16D4200EDADE00833737 /* HGGestureView.m */; };
 		D6ECB4EB1FEC8A36005F328E /* HGBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */; };
 		D6ECB4EF1FEC8A5F005F328E /* HGSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ECB4EE1FEC8A5F005F328E /* HGSignView.m */; };
 		E3395300E2C9D2ACAAE7D057 /* libPods-HGInspirationNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BA988A868DFA73952BCE8E /* libPods-HGInspirationNotesTests.a */; };
@@ -112,6 +124,23 @@
 		D61449E61FFB752C00C56C0E /* UIView+HookForMainThreadUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HookForMainThreadUI.m"; sourceTree = "<group>"; };
 		D61449E81FFBABD800C56C0E /* CALayer+HookForMainThreadUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+HookForMainThreadUI.h"; sourceTree = "<group>"; };
 		D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HookForMainThreadUI.m"; sourceTree = "<group>"; };
+		D66073B7200CD4D400F974DE /* HGArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGArray.h; sourceTree = "<group>"; };
+		D66073B8200CD4D400F974DE /* HGArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGArray.m; sourceTree = "<group>"; };
+		D66073BA200CD4E500F974DE /* HGMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMutableArray.h; sourceTree = "<group>"; };
+		D66073BB200CD4E500F974DE /* HGMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMutableArray.m; sourceTree = "<group>"; };
+		D66073BD200CD7A400F974DE /* NSArray+hg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+hg.h"; sourceTree = "<group>"; };
+		D66073BE200CD7A400F974DE /* NSArray+hg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+hg.m"; sourceTree = "<group>"; };
+		D66073C0200CD7B200F974DE /* NSMutableArray+HG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+HG.h"; sourceTree = "<group>"; };
+		D66073C1200CD7B200F974DE /* NSMutableArray+HG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+HG.m"; sourceTree = "<group>"; };
+		D66073C4200CE6AD00F974DE /* HGSafeMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSafeMutableArray.h; sourceTree = "<group>"; };
+		D66073C5200CE6AD00F974DE /* HGSafeMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGSafeMutableArray.m; sourceTree = "<group>"; };
+		D66073C7200D97CB00F974DE /* HGGesturePasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGesturePasswordView.h; sourceTree = "<group>"; };
+		D66073C8200D97CB00F974DE /* HGGesturePasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGGesturePasswordView.m; sourceTree = "<group>"; };
+		D66073CB200D997E00F974DE /* HGGesturePointLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGesturePointLayer.h; sourceTree = "<group>"; };
+		D66073CC200D997E00F974DE /* HGGesturePointLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGGesturePointLayer.m; sourceTree = "<group>"; };
+		D66073CE200D99D800F974DE /* HGGestureConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGestureConfig.h; sourceTree = "<group>"; };
+		D66073CF200DB1FC00F974DE /* HGGesturePathLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGesturePathLayer.h; sourceTree = "<group>"; };
+		D66073D0200DB1FC00F974DE /* HGGesturePathLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGGesturePathLayer.m; sourceTree = "<group>"; };
 		D667634D2001C926003D56C2 /* HGMKMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMKMapViewController.h; sourceTree = "<group>"; };
 		D667634E2001C926003D56C2 /* HGMKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMKMapViewController.m; sourceTree = "<group>"; };
 		D66763512002480B003D56C2 /* HGBaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBaiduMapViewController.h; sourceTree = "<group>"; };
@@ -212,6 +241,14 @@
 		D6E8BBAB20047D88009082FE /* HGFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGFileManager.m; sourceTree = "<group>"; };
 		D6E8BBAD2005A328009082FE /* HGMATools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMATools.h; sourceTree = "<group>"; };
 		D6E8BBAE2005A328009082FE /* HGMATools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMATools.m; sourceTree = "<group>"; };
+		D6EC166E200DD41900833737 /* HGGesturePathIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGesturePathIndicatorView.h; sourceTree = "<group>"; };
+		D6EC166F200DD41900833737 /* HGGesturePathIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGGesturePathIndicatorView.m; sourceTree = "<group>"; };
+		D6EC1671200DD69200833737 /* HGGesturePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGesturePasswordViewController.h; sourceTree = "<group>"; };
+		D6EC1672200DD69200833737 /* HGGesturePasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGGesturePasswordViewController.m; sourceTree = "<group>"; };
+		D6EC16B5200DE3E100833737 /* AppDelegate+OpenURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+OpenURL.h"; sourceTree = "<group>"; };
+		D6EC16B6200DE3E100833737 /* AppDelegate+OpenURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+OpenURL.m"; sourceTree = "<group>"; };
+		D6EC16D3200EDADE00833737 /* HGGestureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGGestureView.h; sourceTree = "<group>"; };
+		D6EC16D4200EDADE00833737 /* HGGestureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGGestureView.m; sourceTree = "<group>"; };
 		D6ECB4E91FEC8A36005F328E /* HGBezierPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBezierPathViewController.h; sourceTree = "<group>"; };
 		D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGBezierPathViewController.m; sourceTree = "<group>"; };
 		D6ECB4ED1FEC8A5F005F328E /* HGSignView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSignView.h; sourceTree = "<group>"; };
@@ -310,6 +347,39 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		D66073B6200CD4B800F974DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D66073B7200CD4D400F974DE /* HGArray.h */,
+				D66073B8200CD4D400F974DE /* HGArray.m */,
+				D66073BA200CD4E500F974DE /* HGMutableArray.h */,
+				D66073BB200CD4E500F974DE /* HGMutableArray.m */,
+				D66073BD200CD7A400F974DE /* NSArray+hg.h */,
+				D66073BE200CD7A400F974DE /* NSArray+hg.m */,
+				D66073C0200CD7B200F974DE /* NSMutableArray+HG.h */,
+				D66073C1200CD7B200F974DE /* NSMutableArray+HG.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D66073CA200D97D500F974DE /* HGGesturePasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				D66073C7200D97CB00F974DE /* HGGesturePasswordView.h */,
+				D66073C8200D97CB00F974DE /* HGGesturePasswordView.m */,
+				D66073CF200DB1FC00F974DE /* HGGesturePathLayer.h */,
+				D66073D0200DB1FC00F974DE /* HGGesturePathLayer.m */,
+				D66073CB200D997E00F974DE /* HGGesturePointLayer.h */,
+				D66073CC200D997E00F974DE /* HGGesturePointLayer.m */,
+				D66073CE200D99D800F974DE /* HGGestureConfig.h */,
+				D6EC166E200DD41900833737 /* HGGesturePathIndicatorView.h */,
+				D6EC166F200DD41900833737 /* HGGesturePathIndicatorView.m */,
+				D6EC16D3200EDADE00833737 /* HGGestureView.h */,
+				D6EC16D4200EDADE00833737 /* HGGestureView.m */,
+			);
+			path = HGGesturePasswordView;
+			sourceTree = "<group>";
+		};
 		D667634A2001C8F4003D56C2 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +422,7 @@
 		D669A01B200C88F200AA1A6E /* UIResponder */ = {
 			isa = PBXGroup;
 			children = (
+				D66073B6200CD4B800F974DE /* Models */,
 				D669A01F200C892E00AA1A6E /* UIVIew */,
 				D669A01C200C892600AA1A6E /* HGResponderViewController.h */,
 				D669A01D200C892600AA1A6E /* HGResponderViewController.m */,
@@ -452,6 +523,8 @@
 				D61449E31FFB26E000C56C0E /* AppDelegate+SetRenders.m */,
 				D6779D3F1FE612FC0092A2BF /* AppDelegate+SwitchRoot.h */,
 				D6779D401FE612FC0092A2BF /* AppDelegate+SwitchRoot.m */,
+				D6EC16B5200DE3E100833737 /* AppDelegate+OpenURL.h */,
+				D6EC16B6200DE3E100833737 /* AppDelegate+OpenURL.m */,
 				D69E3E301FFE0C05001ADDB3 /* HGInspirationNotes.entitlements */,
 				D6779CD91FE606B80092A2BF /* Main.storyboard */,
 				D6779CDC1FE606B80092A2BF /* Assets.xcassets */,
@@ -575,6 +648,8 @@
 				D61449E61FFB752C00C56C0E /* UIView+HookForMainThreadUI.m */,
 				D61449E81FFBABD800C56C0E /* CALayer+HookForMainThreadUI.h */,
 				D61449E91FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m */,
+				D66073C4200CE6AD00F974DE /* HGSafeMutableArray.h */,
+				D66073C5200CE6AD00F974DE /* HGSafeMutableArray.m */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -733,6 +808,8 @@
 				D6ECB4EC1FEC8A48005F328E /* Views */,
 				D6ECB4E91FEC8A36005F328E /* HGBezierPathViewController.h */,
 				D6ECB4EA1FEC8A36005F328E /* HGBezierPathViewController.m */,
+				D6EC1671200DD69200833737 /* HGGesturePasswordViewController.h */,
+				D6EC1672200DD69200833737 /* HGGesturePasswordViewController.m */,
 			);
 			path = UIBezierPath;
 			sourceTree = "<group>";
@@ -740,6 +817,7 @@
 		D6ECB4EC1FEC8A48005F328E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D66073CA200D97D500F974DE /* HGGesturePasswordView */,
 				D6ECB4ED1FEC8A5F005F328E /* HGSignView.h */,
 				D6ECB4EE1FEC8A5F005F328E /* HGSignView.m */,
 			);
@@ -1061,6 +1139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EC16B7200DE3E100833737 /* AppDelegate+OpenURL.m in Sources */,
 				D669A022200C894300AA1A6E /* HGResponderTestView.m in Sources */,
 				D6779D2F1FE60B510092A2BF /* NetworkBase.m in Sources */,
 				D6E8BBAC20047D88009082FE /* HGFileManager.m in Sources */,
@@ -1071,15 +1150,20 @@
 				D61449E41FFB26E000C56C0E /* AppDelegate+SetRenders.m in Sources */,
 				D673A64F1FF0A62D00B1E787 /* HGSqlManager.m in Sources */,
 				D6ECB4EB1FEC8A36005F328E /* HGBezierPathViewController.m in Sources */,
+				D6EC1670200DD41900833737 /* HGGesturePathIndicatorView.m in Sources */,
 				D67AA6101FF2310B0085F52C /* HGDBBaseModel.m in Sources */,
+				D6EC16D5200EDADE00833737 /* HGGestureView.m in Sources */,
 				D6779D481FE670F60092A2BF /* HGSignin.m in Sources */,
+				D66073C2200CD7B200F974DE /* NSMutableArray+HG.m in Sources */,
 				D69E3E2F1FFE0B8D001ADDB3 /* HGPushNotificationViewController.m in Sources */,
 				D69E3E281FFDFA80001ADDB3 /* HGLocalNotificationViewController.m in Sources */,
 				D6779D1E1FE609BB0092A2BF /* HGOperation.m in Sources */,
 				D673A64B1FF09EF500B1E787 /* HGFMDBViewController.m in Sources */,
 				D669A02B200C9CEB00AA1A6E /* UIResponder+hg.m in Sources */,
 				D61449EA1FFBABD800C56C0E /* CALayer+HookForMainThreadUI.m in Sources */,
+				D66073B9200CD4D500F974DE /* HGArray.m in Sources */,
 				D67AA6091FF20AF50085F52C /* HGBaseViewController.m in Sources */,
+				D66073CD200D997E00F974DE /* HGGesturePointLayer.m in Sources */,
 				D6779D381FE60DCE0092A2BF /* HGSigninViewController.m in Sources */,
 				D61449E71FFB752C00C56C0E /* UIView+HookForMainThreadUI.m in Sources */,
 				D6779D151FE609440092A2BF /* HGGCDViewController.m in Sources */,
@@ -1096,10 +1180,13 @@
 				D6779D8F1FE912F80092A2BF /* HGRunLoopThreadKeepViewController.m in Sources */,
 				D6779D0A1FE607BC0092A2BF /* HGMainTableViewController.m in Sources */,
 				D67AA6131FF2313B0085F52C /* HGUserInfoDBModel.m in Sources */,
+				D66073BC200CD4E500F974DE /* HGMutableArray.m in Sources */,
 				D66763532002480B003D56C2 /* HGBaiduMapViewController.m in Sources */,
 				D6E8BBAF2005A328009082FE /* HGMATools.m in Sources */,
+				D6EC1673200DD69200833737 /* HGGesturePasswordViewController.m in Sources */,
 				D673A6521FF0A86D00B1E787 /* HGSqlManagerBase.m in Sources */,
 				D6779D411FE612FC0092A2BF /* AppDelegate+SwitchRoot.m in Sources */,
+				D66073C9200D97CB00F974DE /* HGGesturePasswordView.m in Sources */,
 				D669A01E200C892600AA1A6E /* HGResponderViewController.m in Sources */,
 				D6779CD21FE606B80092A2BF /* AppDelegate.m in Sources */,
 				D6ECB4EF1FEC8A5F005F328E /* HGSignView.m in Sources */,
@@ -1108,6 +1195,9 @@
 				D6779D2C1FE60B3C0092A2BF /* AFAppDotNetAPIClient.m in Sources */,
 				D6779CE31FE606B80092A2BF /* main.m in Sources */,
 				D6779D501FE794440092A2BF /* HGDataStructViewController.m in Sources */,
+				D66073D1200DB1FC00F974DE /* HGGesturePathLayer.m in Sources */,
+				D66073C6200CE6AD00F974DE /* HGSafeMutableArray.m in Sources */,
+				D66073BF200CD7A400F974DE /* NSArray+hg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

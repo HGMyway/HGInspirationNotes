@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -429,6 +430,13 @@
                                     <action selector="createImage:" destination="aMJ-CW-GQ4" eventType="touchUpInside" id="2Eu-Qg-71R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYG-Xp-arV">
+                                <rect key="frame" x="164" y="588" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="AMa-p2-sg5" kind="show" id="Sac-UK-ZyP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -436,6 +444,8 @@
                             <constraint firstItem="IEq-8D-3vv" firstAttribute="trailing" secondItem="CFU-TJ-VQ6" secondAttribute="trailing" constant="60" id="87n-Ki-QkK"/>
                             <constraint firstItem="CFU-TJ-VQ6" firstAttribute="top" secondItem="Hny-0Q-bch" secondAttribute="bottom" constant="8" id="8jK-u2-dy6"/>
                             <constraint firstItem="Hny-0Q-bch" firstAttribute="top" secondItem="X4o-B0-xvW" secondAttribute="bottom" constant="8" id="Pml-pI-I9J"/>
+                            <constraint firstItem="gYG-Xp-arV" firstAttribute="centerX" secondItem="a6j-0Z-x9I" secondAttribute="centerX" id="QH6-gm-ugS"/>
+                            <constraint firstItem="gYG-Xp-arV" firstAttribute="bottom" secondItem="IEq-8D-3vv" secondAttribute="bottom" id="SwV-tj-dGU"/>
                             <constraint firstItem="Hny-0Q-bch" firstAttribute="trailing" secondItem="IEq-8D-3vv" secondAttribute="trailing" id="aay-50-W4K"/>
                             <constraint firstItem="FCo-9w-7Rx" firstAttribute="top" secondItem="Hny-0Q-bch" secondAttribute="bottom" constant="8" id="fjV-uw-UgB"/>
                             <constraint firstItem="CFU-TJ-VQ6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FCo-9w-7Rx" secondAttribute="trailing" id="jZn-Yb-TGD"/>
@@ -454,6 +464,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDx-6l-2uS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5324" y="2358.170914542729"/>
+        </scene>
+        <!--Gesture Password View Controller-->
+        <scene sceneID="qUj-4q-kFL">
+            <objects>
+                <viewController id="AMa-p2-sg5" customClass="HGGesturePasswordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkf-HQ-P1l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9Q-8O-uck">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPv-xo-rl2" customClass="HGGesturePathIndicatorView">
+                                        <rect key="frame" x="137.5" y="8" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.56983200379999999" blue="0.17444633200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Te9-yH-VBZ"/>
+                                            <constraint firstAttribute="width" secondItem="jPv-xo-rl2" secondAttribute="height" multiplier="1:1" id="ocB-Wb-ilm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-50-4g1" customClass="HGGesturePasswordView">
+                                        <rect key="frame" x="16" y="124" width="343" height="343"/>
+                                        <color key="backgroundColor" red="0.96603983640000002" green="0.75708299879999996" blue="0.3041850626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YwP-50-4g1" secondAttribute="height" multiplier="1:1" id="iTi-zn-0jw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26157939429999999" green="0.61636155839999995" blue="0.95685619119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YwP-50-4g1" firstAttribute="leading" secondItem="U9Q-8O-uck" secondAttribute="leading" constant="16" id="66P-uQ-Nph"/>
+                                    <constraint firstItem="YwP-50-4g1" firstAttribute="top" secondItem="jPv-xo-rl2" secondAttribute="bottom" constant="16" id="7fS-XO-hDK"/>
+                                    <constraint firstAttribute="trailing" secondItem="YwP-50-4g1" secondAttribute="trailing" constant="16" id="Td2-4o-5v9"/>
+                                    <constraint firstItem="jPv-xo-rl2" firstAttribute="top" secondItem="U9Q-8O-uck" secondAttribute="top" constant="8" id="iKn-HR-xqW"/>
+                                    <constraint firstItem="jPv-xo-rl2" firstAttribute="centerX" secondItem="U9Q-8O-uck" secondAttribute="centerX" id="rtq-X7-3MB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eyv-cg-ARh" firstAttribute="trailing" secondItem="U9Q-8O-uck" secondAttribute="trailing" id="1G1-Ja-yhG"/>
+                            <constraint firstItem="U9Q-8O-uck" firstAttribute="top" secondItem="eyv-cg-ARh" secondAttribute="top" id="1Gw-he-hbh"/>
+                            <constraint firstItem="U9Q-8O-uck" firstAttribute="leading" secondItem="eyv-cg-ARh" secondAttribute="leading" id="ZZ5-jX-O1q"/>
+                            <constraint firstItem="U9Q-8O-uck" firstAttribute="bottom" secondItem="eyv-cg-ARh" secondAttribute="bottom" id="dLt-aV-GzY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eyv-cg-ARh"/>
+                    </view>
+                    <connections>
+                        <outlet property="gesturePathView" destination="jPv-xo-rl2" id="o4M-pX-vIB"/>
+                        <outlet property="gestureView" destination="YwP-50-4g1" id="YoE-cW-tHl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yh0-J4-2wd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5324" y="3077.8110944527739"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9SS-cP-0gr">
